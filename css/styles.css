@@ -1,0 +1,120 @@
+/* --- Global Body Styles --- */
+body {
+    /* Sets a readable default font for all text */
+    font-family: Arial, sans-serif;
+    /* Basic light background color */
+    background-color: #f4f4f9; 
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Page Wrapper (For Centering) --- */
+#page-wrapper {
+    max-width: 960px; /* Constrains the width for desktop readability */
+    margin: 0 auto; /* Centers the whole page container */
+    background-color: white; /* Ensures content background is white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* --- Main Content Area (For Padding within the Wrapper) --- */
+/* You will need to wrap the body content (everything after <header>) in a <div id="main-content-area"> for this to work */
+#main-content-area {
+    padding: 20px 40px; 
+}
+
+/* --- Navigation Styles --- */
+nav ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    background-color: #333; 
+    overflow: hidden; 
+}
+
+nav li {
+    float: left; 
+}
+
+nav li a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}
+
+nav li a:hover {
+    /* Simple color change on hover */
+    background-color: #575757; 
+}
+
+/* Styling for the actively selected page (requires adding class="active" in HTML) */
+nav li a.active {
+    background-color: #1e3a8a; /* Dark blue for active tab */
+    color: white;
+}
+
+/* --- Heading Styles --- */
+h1 {
+    color: #1e3a8a; 
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: #4b5563; 
+    margin-top: 30px;
+    /* Resume Enhancement: Dashed line separator for sections */
+    border-bottom: 1px dashed #ccc; 
+    padding-bottom: 3px;
+}
+
+/* --- Paragraph/Text Readability --- */
+p { 
+    line-height: 1.6; /* Improved spacing between lines */
+    margin-bottom: 15px;
+}
+
+/* --- Resume Specific Styles (For resume.html) --- */
+#resume-contact {
+    /* Styles the contact paragraph to look professional */
+    font-size: 0.9em; 
+    color: #666; 
+    margin-bottom: 25px; 
+}
+
+/* Styles for experience/project list items */
+ul, ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Highlights the job title/company for easy scanning */
+.experience-item strong {
+    font-weight: bold;
+    color: #1e3a8a;
+    display: block; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* --- Media Page Specific Styles (For page3.html) --- */
+
+/* Centers images with some margin */
+.agent-image {
+    display: inline-block;
+    max-width: 30%; /* Limits width for side-by-side display */
+    height: auto;
+    margin: 10px 1.5%;
+    border: 1px solid #ccc;
+}
+
+video {
+    /* Center the video on the page */
+    display: block; 
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    /* Added a highlight border */
+    border: 3px solid #E35335; 
+}
