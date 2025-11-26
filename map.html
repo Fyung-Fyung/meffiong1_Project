@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Campus Map - Mutanda Effiong</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AlzaSyBM1F-BpX660SBK3-Vw9O9f7AEVTAIH8rl&callback=initMap"></script>
+    <style>
+      /* Specific style for the map container */
+      #map {
+        height: 500px;
+        width: 100%;
+        margin-top: 20px;
+        border: 2px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="page3.html">Valorant</a></li>
+            <li><a class="active" href="map.html">Map</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div id="main-content-area">
+        <h1>Campus Location</h1>
+        <p>This map shows the location of the Illinois Institute of Technology, where I am currently pursuing my degree.</p>
+        
+        <div id="map"></div>
+      </div>
+    </div>
+    <button id="questionBtn">Questions?</button>
+  </body>
+</html>
