@@ -10,14 +10,13 @@ body {
 
 /* --- Page Wrapper (For Centering) --- */
 #page-wrapper {
-    max-width: 960px; /* Constrains the width for desktop readability */
-    margin: 0 auto; /* Centers the whole page container */
+    /* Changed for Mobile First approach: Default to 100% width on small screens */
+    width: 100%; 
     background-color: white; /* Ensures content background is white */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 /* --- Main Content Area (For Padding within the Wrapper) --- */
-/* You will need to wrap the body content (everything after <header>) in a <div id="main-content-area"> for this to work */
 #main-content-area {
     padding: 20px 40px; 
 }
@@ -118,4 +117,56 @@ video {
     height: auto;
     /* Added a highlight border */
     border: 3px solid #E35335; 
+}
+
+/* Map Container Style (Added for Project 3) */
+#map {
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    border: 2px solid #333;
+}
+
+/* ======================================================
+   PROJECT 3: MOBILE RESPONSIVENESS & MEDIA QUERIES
+   Requirement: 2 min-width queries with 3 style changes each
+   ====================================================== */
+
+/* Media Query 1: Tablets and larger phones (min-width: 600px) */
+@media screen and (min-width: 600px) {
+    /* Change 1: Increase font size for better readability on tablets */
+    body {
+        font-size: 18px;
+    }
+
+    /* Change 2: Change Nav background to red to distinct tablet view */
+    nav ul {
+        background-color: #cc0000;
+    }
+
+    /* Change 3: Center align H1 headers on tablets */
+    h1 {
+        text-align: center;
+        border-color: #cc0000;
+    }
+}
+
+/* Media Query 2: Desktops/Laptops (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    /* Change 1: Constrain width and center the page wrapper */
+    #page-wrapper {
+        max-width: 960px; 
+        margin: 20px auto; 
+    }
+
+    /* Change 2: Return Navigation bar to dark grey for desktop professional look */
+    nav ul {
+        background-color: #333; 
+    }
+
+    /* Change 3: Add a border to the main content area */
+    #main-content-area {
+        border: 1px solid #e0e0e0;
+        background-color: #ffffff;
+    }
 }
